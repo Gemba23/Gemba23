@@ -2,12 +2,12 @@ const Asena = require('../events');
 const {MessageType} = require('@adiwajshing/baileys');
 const cof = require('../config');
 
-const rep = "*Lütfen Herhangi Bir Kullanıcının Mesajını Yanıtlayın!*"
+const rep = "*Please Reply to Any User's Message!*"
 const SORU = {
-    none: 'Arkadaşlarınıza sorabileceğiniz güzel ve düşündürücü sorular.',
-    zor: 'Normalden daha zorlayıcı sorular için hazırlan.',
-    nsfw: '+18 doğruluk soruları sorar.',
-    lgbt: 'LGBT konuları hakkında soru sorar'
+    none: 'Good and thought provoking questions to ask your friends.',
+    zor: 'Prepare for more challenging questions than usual.',
+    nsfw: '+18 asks truth questions.',
+    lgbt: 'Asks questions about LGBT issues'
 };
 
 if (cof.WORKTYPE == 'public') {
