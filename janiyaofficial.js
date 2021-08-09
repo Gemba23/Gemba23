@@ -13,7 +13,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const cof = require('../config');
 
 const rep = "*කරුණාකර ඕනෑම පරිශීලකයෙකුගේ පණිවිඩයකට පිළිතුරු දෙන්න!*"
-const JOP = {
+const SUDO = {
     none: 'ඔබේ මිතුරන්ගෙන් ඇසීමට හොඳ සහ සිතට කාවදින ප්‍රශ්න.',
     challenge: 'වෙනදාට වඩා අභියෝගාත්මක ප්‍රශ්න සඳහා සූදානම් වන්න.',
     sex: '+18 සත්‍ය ප්‍රශ්න අසයි.',
@@ -21,7 +21,7 @@ const JOP = {
 };
 
 if (cof.WORKTYPE == 'public') {
-    Asena.addCommand({pattern: 'jop', fromMe: false, desc: JOP.none}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sudo', fromMe: false, desc: SUDO.none}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid, rep, MessageType.text);
 
@@ -156,7 +156,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'jop', fromMe: true, desc: JOP.none}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sudo', fromMe: true, desc: SUDO.none}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid, rep, MessageType.text);
 
@@ -290,7 +290,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'challengejop', fromMe: false, desc: JOP.challenge}, (async (message, match) => {
+    Asena.addCommand({pattern: 'challengesudo', fromMe: false, desc: SUDO.challenge}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -390,7 +390,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'challengejop', fromMe: true, desc: JOP.challenge}, (async (message, match) => {
+    Asena.addCommand({pattern: 'challengesudo', fromMe: true, desc: SUDO.challenge}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -490,7 +490,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'sexjop', fromMe: false, desc: JOP.sex}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sexsudo', fromMe: false, desc: SUDO.sex}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -579,7 +579,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'sexjop', fromMe: true, desc: JOP.sex}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sexsudo', fromMe: true, desc: SUDO.sex}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -667,7 +667,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'lgbtjop', fromMe: false, desc: JOP.lgbt}, (async (message, match) => {
+    Asena.addCommand({pattern: 'lgbtsudo', fromMe: false, desc: SUDO.lgbt}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -717,7 +717,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'lgbtjop', fromMe: true, desc: JOP.lgbt}, (async (message, match) => {
+    Asena.addCommand({pattern: 'lgbtsudo', fromMe: true, desc: SUDO.lgbt}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -768,7 +768,7 @@ if (cof.WORKTYPE == 'public') {
     }));
 }
 else if (cof.WORKTYPE == 'private') {
-    Asena.addCommand({pattern: 'jop', fromMe: true, desc: JOP.none}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sudo', fromMe: true, desc: SUDO.none}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid, rep, MessageType.text);
 
@@ -903,7 +903,7 @@ else if (cof.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'challengejop', fromMe: true, desc: JOP.challenge}, (async (message, match) => {
+    Asena.addCommand({pattern: 'challengesudo', fromMe: true, desc: SUDO.challenge}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -1003,7 +1003,7 @@ else if (cof.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'sexjop', fromMe: true, desc: JOP.sex}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sexsudo', fromMe: true, desc: SUDO.sex}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -1092,7 +1092,7 @@ else if (cof.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'lgbtjop', fromMe: true, desc: JOP.lgbt}, (async (message, match) => {
+    Asena.addCommand({pattern: 'lgbtsudo', fromMe: true, desc: SUDO.lgbt}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
