@@ -13,7 +13,7 @@ const {MessageType} = require('@adiwajshing/baileys');
 const cof = require('../config');
 
 const rep = "*කරුණාකර ඕනෑම පරිශීලකයෙකුගේ පණිවිඩයකට පිළිතුරු දෙන්න!*"
-const SUDO = {
+const SURO = {
     none: 'ඔබේ මිතුරන්ගෙන් ඇසීමට හොඳ සහ සිතට කාවදින ප්‍රශ්න.',
     challenge: 'වෙනදාට වඩා අභියෝගාත්මක ප්‍රශ්න සඳහා සූදානම් වන්න.',
     sex: '+18 සත්‍ය ප්‍රශ්න අසයි.',
@@ -21,7 +21,7 @@ const SUDO = {
 };
 
 if (cof.WORKTYPE == 'public') {
-    Asena.addCommand({pattern: 'sudo', fromMe: false, desc: SUDO.none}, (async (message, match) => {
+    Asena.addCommand({pattern: 'suro', fromMe: false, desc: SURO.none}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid, rep, MessageType.text);
 
@@ -156,7 +156,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'sudo', fromMe: true, desc: SUDO.none}, (async (message, match) => {
+    Asena.addCommand({pattern: 'suro', fromMe: true, desc: SURO.none}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid, rep, MessageType.text);
 
@@ -290,7 +290,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'challengesudo', fromMe: false, desc: SUDO.challenge}, (async (message, match) => {
+    Asena.addCommand({pattern: 'challengesuro', fromMe: false, desc: SURO.challenge}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -390,7 +390,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'challengesudo', fromMe: true, desc: SUDO.challenge}, (async (message, match) => {
+    Asena.addCommand({pattern: 'challengesuro', fromMe: true, desc: SURO.challenge}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -408,7 +408,7 @@ if (cof.WORKTYPE == 'public') {
     r_text [3] = " * එයින් ප්‍රතිවිපාක නැති බව ඔබ දැන සිටියා නම් ඔබ කුමක් කරන්නද? *";
     r_text [4] = " * ඔබ ඔබේ මිතුරන් සමඟ කිරීමට කැමති නමුත් ඔබේ පෙම්වතිය ඉදිරියේ කිසි දිනෙක නොකළ යුතු දේ කුමක්ද? *";
     r_text [5] = " * මේ ජීවිතයේ ඔබ වඩාත් ඊර්ෂ්‍යා කරන්නේ කවුද? *";
-    r_text [6] = " * ආදරය සඳහා මම ඕනෑම දෙයක් කරන්නෙමි, නමුත්" එය "නොකරනවා යැයි ඔබ කියන්නේ කුමක්ද? *";
+    r_text [6] = " * ආදරය සඳහා මම ඕනෑම දෙයක් කරන්නෙමි, නමුත් එය නොකරනවා යැයි ඔබ කියන්නේ කුමක්ද? *";
     r_text [7] = " * ඔබට විවිධ මිථ්‍යා විශ්වාස තිබේද? එසේ නම් ඒවා මොනවාද? *";
     r_text [8] = " * ඔබ එයට ආදරය කළ බව පිළිගැනීමට ඔබ ලැජ්ජා වන්නේ කුමන චිත්‍රපටය ද? *";
     r_text [9] = " * ඔබ අපහසුතාවයට පත් කරන ස්වයං රැකවරණ පුරුද්ද කුමක්ද? *";
@@ -490,7 +490,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'sexsudo', fromMe: false, desc: SUDO.sex}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sexsuro', fromMe: false, desc: SURO.sex}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -579,7 +579,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'sexsudo', fromMe: true, desc: SUDO.sex}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sexsuro', fromMe: true, desc: SURO.sex}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -667,7 +667,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'lgbtsudo', fromMe: false, desc: SUDO.lgbt}, (async (message, match) => {
+    Asena.addCommand({pattern: 'lgbtsuro', fromMe: false, desc: SURO.lgbt}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -680,7 +680,7 @@ if (cof.WORKTYPE == 'public') {
         var r_text = new Array ();
     r_text [0] = " * ඔබේ එකම ලිංගය ගැන +18 දේවල් ගැන ඔබ කවදාවත් සිතුවාද? *";
     r_text [1] = " * ඔබට ඔබේ සමලිංගිකයින් සමඟ පමණක් ලිංගිකව හැසිරීමට හැකි නම්, ඔබ මෙම කණ්ඩායම තුළ එය කරන්නේ කා සමඟද *";
-    r_text [2] = " * ඔබ කරන දේවල් හෝ කතා කරන විදිහ නිසා ඔබ" ට්රාන්ස් "යැයි ඔබ සැලකුවාද? *";
+    r_text [2] = " * ඔබ කරන දේවල් හෝ කතා කරන විදිහ නිසා ඔබ Trance යැයි ඔබ සැලකුවාද? *";
     r_text [3] = " * ඔබ මෙම කණ්ඩායමේ ඔබේ සමාන ලිංගය සමඟ සම්බන්ධතාවක් තිබුනේ නම්, ඔබ කා සමඟද? *";
     r_text [4] = " * ඔබ දේදුනු පාටට කැමතිද? *";
     r_text [5] = " * ඔබ LGBT අක්ෂර සමඟ ක්‍රීඩා කිරීමෙන් සතුටක් ලබනවාද? *";
@@ -717,7 +717,7 @@ if (cof.WORKTYPE == 'public') {
 
     }));
 
-    Asena.addCommand({pattern: 'lgbtsudo', fromMe: true, desc: SUDO.lgbt}, (async (message, match) => {
+    Asena.addCommand({pattern: 'lgbtsuro', fromMe: true, desc: SURO.lgbt}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -730,7 +730,7 @@ if (cof.WORKTYPE == 'public') {
         var r_text = new Array ();
    r_text [0] = " * ඔබේ එකම ලිංගය ගැන +18 දේවල් ගැන ඔබ කවදාවත් සිතුවාද? *";
     r_text [1] = " * ඔබට ඔබේ සමලිංගිකයින් සමඟ පමණක් ලිංගිකව හැසිරීමට හැකි නම්, ඔබ මෙම කණ්ඩායම තුළ එය කරන්නේ කා සමඟද *";
-    r_text [2] = " * ඔබ කරන දේවල් හෝ කතා කරන විදිහ නිසා ඔබ" ට්රාන්ස් "යැයි ඔබ සැලකුවාද? *";
+    r_text [2] = " * ඔබ කරන දේවල් හෝ කතා කරන විදිහ නිසා ඔබ Trance යැයි ඔබ සැලකුවාද? *";
     r_text [3] = " * ඔබ මෙම කණ්ඩායමේ ඔබේ සමාන ලිංගය සමඟ සම්බන්ධතාවක් තිබුනේ නම්, ඔබ කා සමඟද? *";
     r_text [4] = " * ඔබ දේදුනු පාටට කැමතිද? *";
     r_text [5] = " * ඔබ LGBT අක්ෂර සමඟ ක්‍රීඩා කිරීමෙන් සතුටක් ලබනවාද? *";
@@ -768,7 +768,7 @@ if (cof.WORKTYPE == 'public') {
     }));
 }
 else if (cof.WORKTYPE == 'private') {
-    Asena.addCommand({pattern: 'sudo', fromMe: true, desc: SUDO.none}, (async (message, match) => {
+    Asena.addCommand({pattern: 'suro', fromMe: true, desc: SURO.none}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid, rep, MessageType.text);
 
@@ -903,7 +903,7 @@ else if (cof.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'challengesudo', fromMe: true, desc: SUDO.challenge}, (async (message, match) => {
+    Asena.addCommand({pattern: 'challengesuro', fromMe: true, desc: SURO.challenge}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -921,7 +921,7 @@ else if (cof.WORKTYPE == 'private') {
     r_text [3] = " * එයින් ප්‍රතිවිපාක නැති බව ඔබ දැන සිටියා නම් ඔබ කුමක් කරන්නද? *";
     r_text [4] = " * ඔබ ඔබේ මිතුරන් සමඟ කිරීමට කැමති නමුත් ඔබේ පෙම්වතිය ඉදිරියේ කිසි දිනෙක නොකළ යුතු දේ කුමක්ද? *";
     r_text [5] = " * මේ ජීවිතයේ ඔබ වඩාත් ඊර්ෂ්‍යා කරන්නේ කවුද? *";
-    r_text [6] = " * ආදරය සඳහා මම ඕනෑම දෙයක් කරන්නෙමි, නමුත්" එය "නොකරනවා යැයි ඔබ කියන්නේ කුමක්ද? *";
+    r_text [6] = " * ආදරය සඳහා මම ඕනෑම දෙයක් කරන්නෙමි, නමුත් එය නොකරනවා යැයි ඔබ කියන්නේ කුමක්ද? *";
     r_text [7] = " * ඔබට විවිධ මිථ්‍යා විශ්වාස තිබේද? එසේ නම් ඒවා මොනවාද? *";
     r_text [8] = " * ඔබ එයට ආදරය කළ බව පිළිගැනීමට ඔබ ලැජ්ජා වන්නේ කුමන චිත්‍රපටය ද? *";
     r_text [9] = " * ඔබ අපහසුතාවයට පත් කරන ස්වයං රැකවරණ පුරුද්ද කුමක්ද? *";
@@ -1003,7 +1003,7 @@ else if (cof.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'sexsudo', fromMe: true, desc: SUDO.sex}, (async (message, match) => {
+    Asena.addCommand({pattern: 'sexsuro', fromMe: true, desc: SURO.sex}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -1092,7 +1092,7 @@ else if (cof.WORKTYPE == 'private') {
 
     }));
 
-    Asena.addCommand({pattern: 'lgbtsudo', fromMe: true, desc: SUDO.lgbt}, (async (message, match) => {
+    Asena.addCommand({pattern: 'lgbtsuro', fromMe: true, desc: SURO.lgbt}, (async (message, match) => {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid,rep, MessageType.text);
 
@@ -1105,7 +1105,7 @@ else if (cof.WORKTYPE == 'private') {
         var r_text = new Array ();
     r_text [0] = " * ඔබේ එකම ලිංගය ගැන +18 දේවල් ගැන ඔබ කවදාවත් සිතුවාද? *";
     r_text [1] = " * ඔබට ඔබේ සමලිංගිකයින් සමඟ පමණක් ලිංගිකව හැසිරීමට හැකි නම්, ඔබ මෙම කණ්ඩායම තුළ එය කරන්නේ කා සමඟද *";
-    r_text [2] = " * ඔබ කරන දේවල් හෝ කතා කරන විදිහ නිසා ඔබ" ට්රාන්ස් "යැයි ඔබ සැලකුවාද? *";
+    r_text [2] = " * ඔබ කරන දේවල් හෝ කතා කරන විදිහ නිසා ඔබ Trance යැයි ඔබ සැලකුවාද? *";
     r_text [3] = " * ඔබ මෙම කණ්ඩායමේ ඔබේ සමාන ලිංගය සමඟ සම්බන්ධතාවක් තිබුනේ නම්, ඔබ කා සමඟද? *";
     r_text [4] = " * ඔබ දේදුනු පාටට කැමතිද? *";
     r_text [5] = " * ඔබ LGBT අක්ෂර සමඟ ක්‍රීඩා කිරීමෙන් සතුටක් ලබනවාද? *";
