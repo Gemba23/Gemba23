@@ -25,7 +25,7 @@ if (cof.WORKTYPE == 'public') {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid, rep, MessageType.text);
 
-        await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *මෙන්න ගැටලුව පැමිණේ ..** 🤭 ', MessageType.text, {
+        await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + ' *Here Comes The Problem..* 🤭 ', MessageType.text, {
             quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
 
         });
@@ -159,7 +159,7 @@ if (cof.WORKTYPE == 'public') {
 
         if (!message.reply_message) return await message.client.sendMessage(message.jid, rep, MessageType.text);
 
-        await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + '*මෙන්න කරදරය ..* 🤭 ', MessageType.text, {
+        await message.client.sendMessage(message.jid, '@' + message.reply_message.jid.split('@')[0] + '*I Choose The Hardest Questions For You..* 😈 ', MessageType.text, {
             quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
 
         });
