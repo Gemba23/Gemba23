@@ -23,7 +23,7 @@ if (cof.WORKTYPE == 'public') {
         await new Promise(r => setTimeout(r, 2100));
 
         var r_text = new Array ();
-    r_text[0] = " *Telefonunda en son aradığın şey neydi?* ";
+    r_text[0] = " *What was the last thing you searched for on your phone?* ";
     r_text[1] = " *Birisi kız arkadaşın / erkek arkadaşından ayrılmak için sana 1 milyon tl önerseydi, yapar mıydın?* ";
     r_text[2] = " *Yerden bir şeyi alıp hiç yedin mi?* ";
     r_text[3] = " *Yılan, kurbağa gibi şeylerden yemek zorunda kaldın mı?* ";
@@ -158,7 +158,7 @@ if (cof.WORKTYPE == 'public') {
         await new Promise(r => setTimeout(r, 2100));
 
         var r_text = new Array ();
-    r_text[0] = " *Telefonunda en son aradığın şey neydi?* ";
+    r_text[0] = " *What was the last thing you searched for on your phone?* ";
     r_text[1] = " *Birisi kız arkadaşın / erkek arkadaşından ayrılmak için sana 1 milyon tl önerseydi, yapar mıydın?* ";
     r_text[2] = " *Yerden bir şeyi alıp hiç yedin mi?* ";
     r_text[3] = " *Yılan, kurbağa gibi şeylerden yemek zorunda kaldın mı?* ";
